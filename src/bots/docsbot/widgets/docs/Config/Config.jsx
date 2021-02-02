@@ -14,10 +14,10 @@ const Config = ({ gist, setState }) => {
 
   return (
     <div>
-      <ConditionallyRender
+      {/* <ConditionallyRender
         ifTrue={showActionProviderGist}
         show={<GistContainer gistId="af04e2e30407671412af08fa3c429409" />}
-      />
+      /> */}
     </div>
   );
 };

@@ -19,7 +19,7 @@ const MessageParserDocs = ({ infoBox, setState }) => {
 
   return (
     <div className={styles.overview}>
-      <ConditionallyRender
+      {/* <ConditionallyRender
         ifTrue={showMessageParserInfoBox}
         show={
           <InformationBox setState={setState}>
@@ -37,7 +37,7 @@ const MessageParserDocs = ({ infoBox, setState }) => {
             </p>
           </InformationBox>
         }
-      />
+      /> */}
     </div>
   );
 };

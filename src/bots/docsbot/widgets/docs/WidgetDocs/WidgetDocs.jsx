@@ -17,7 +17,7 @@ const WidgetDocs = ({ infoBox, setState }) => {
 
   return (
     <div>
-      <ConditionallyRender
+      {/* <ConditionallyRender
         ifTrue={showWidgetInfoBox}
         show={
           <InformationBox setState={setState}>
@@ -33,7 +33,7 @@ const WidgetDocs = ({ infoBox, setState }) => {
             <Gist id="6f0c3aeed1ef5b87b4d5652d69e3419d" />
           </InformationBox>
         }
-      />
+      /> */}
     </div>
   );
 };
