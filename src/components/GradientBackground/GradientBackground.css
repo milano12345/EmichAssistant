@@ -1,0 +1,10 @@
+html {
+  background-image: url("https://www.slashgear.com/wp-content/uploads/2019/08/2020-Chevrolet-Corvette-Stingray-042-1-1280x720.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: linear-gradient(to bottom right, #67d596, #33607c);
+  min-height: 100vh;
+  padding: 40px 25px 80px 25px;
+}
