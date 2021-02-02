@@ -2,9 +2,18 @@
   text-align: center;
 }
 
+.logo {
+  background:url(./assets/img/logo.png) no-repeat;
+  width: 120%!important;
+  display: block!important;
+  height: 115px!important;
+  margin-right: .2rem!important;
+  margin-left: -1rem!important;
+}
+
 @media screen and (max-width: 802px){
 img.logo {
-    width: 72%;
+    width: 120%;
 }
 }
 

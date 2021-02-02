@@ -12,16 +12,17 @@ import ActionProvider from "./bots/docsbot/ActionProvider";
 
 import "./App.css";
 
+
 function App() {
-  const [showChatbot, toggleChatbot] = useState(false);
-  if(showChatbot === false) {
-  setTimeout(() => {toggleChatbot(true) },500)
-  }
+  const [showChatbot, toggleChatbot] = useState(true);
+  // if(showChatbot === false) {
+  // setTimeout(() => {toggleChatbot(true) },500)
+  // }
   return (
     <div className="App">
       <GradientBackground>
         <Menu />
-        <img className="logo" alt="logo" src="https://www.carlogos.org/logo/Chevrolet-logo-2013-2560x1440.png" style={{ paddingTop: "40px"}} />
+        <div className="logo" style={{ paddingTop: "40px"}} />
         <h1 className="app-header">Emich Chevrolet Live Chat</h1>
         <div className="app-npm-install">Ask me a question!</div>
         <div className="app-chatbot-container">
