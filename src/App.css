@@ -3,7 +3,7 @@
 }
 
 .logo {
-  background:url(./assets/img/logo.png) no-repeat;
+  background:url(./assets/img/logo.png) no-repeat center center;
   width: 120%!important;
   display: block!important;
   height: 115px!important;
@@ -12,7 +12,7 @@
 }
 
 @media screen and (max-width: 802px){
-img.logo {
+img.logo1 {
     width: 120%;
 }
 }
@@ -21,10 +21,12 @@ img.logo {
   justify-content: center!important;
 }
 
- .logo {
+ .logo1 {
   padding-top: 40px;
-  height: auto;
-  width: 35%;
+  height: 10rem;
+  justify-content: center!important;
+  background:url(./assets/img/logo.png) no-repeat center center;
+  
  }
 .app-npm-install {
   background: #286f65;

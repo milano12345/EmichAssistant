@@ -20,9 +20,9 @@ function App() {
   // }
   return (
     <div className="App">
-      <GradientBackground>
+
         <Menu />
-        <div className="logo" style={{ paddingTop: "40px"}} />
+        <div className="logo1" style={{ paddingTop: "40px"}} />
         <h1 className="app-header">Emich Chevrolet Live Chat</h1>
         <div className="app-npm-install">Ask me a question!</div>
         <div className="app-chatbot-container">
@@ -44,7 +44,6 @@ function App() {
         >
           <ButtonIcon className="app-chatbot-button-icon" />
         </button>
-      </GradientBackground>
     </div>
   );
 }
