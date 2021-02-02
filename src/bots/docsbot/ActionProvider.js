@@ -6,8 +6,8 @@ class ActionProvider {
 
   handleMessageParserDocs = () => {
     const messages = this.createChatBotMessage(
-      "The message parser controls how the bot reads input and decides which action to invoke.",
-      { widget: "messageParser", withAvatar: true }
+      "Hi there, I'd like to connect you to the next available team member. May I have your name?",
+      { widget: "messageParser", withAvatar: false }
     );
 
     this.addMessageToBotState(messages);
@@ -16,8 +16,8 @@ class ActionProvider {
   handleActionProviderDocs = () => {
     const messages = [
       this.createChatBotMessage(
-        "The action provider defines the bots response after the message is parsed.",
-        { widget: "actionProviderDocs", withAvatar: true }
+        "Hi there, I'd like to connect you to the next available team member. May I have your name?",
+        { widget: "actionProviderDocs"}
       ),
     ];
 
@@ -26,8 +26,8 @@ class ActionProvider {
 
   handleConfigDocs = () => {
     const messages = this.createChatBotMessage(
-      "The config controls every configurable aspect of the chatbot.",
-      { widget: "config", withAvatar: true }
+      "Hi there, I'd like to connect you to the next available team member. May I have your name?",
+      { widget: "config"}
     );
 
     this.addMessageToBotState(messages);
@@ -35,8 +35,8 @@ class ActionProvider {
 
   handleWidgetDocs = () => {
     const messages = this.createChatBotMessage(
-      "Widgets are custom components that you want to render with a chatbot response.",
-      { widget: "widget", withAvatar: true }
+      "Hi there, I'd like to connect you to the next available team member. May I have your name?",
+      { widget: "widget"}
     );
 
     this.addMessageToBotState(messages);
@@ -44,9 +44,9 @@ class ActionProvider {
 
   handleDefault = () => {
     const message = this.createChatBotMessage(
-      "How can I help? Here is the overview.",
+      "How can I help? Here is our incentives this month.",
       {
-        withAvatar: true,
+    
         widget: "overview",
       }
     );

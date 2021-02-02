@@ -21,7 +21,6 @@ const ActionProviderDocs = ({ infoBox, setState }) => {
   return (
     <div>
       <FadeIn left by={250}>
-        <ActionProviderOverview className={styles.overviewSVG} />
       </FadeIn>
 
       <ConditionallyRender

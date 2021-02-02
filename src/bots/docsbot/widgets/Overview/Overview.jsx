@@ -10,7 +10,6 @@ const Overview = (props) => {
   return (
     <div className={styles.overview}>
       <FadeIn left by={250}>
-        <OverviewSVG className={styles.overviewSVG} />
       </FadeIn>
 
       <GeneralOptions actionProvider={props.actionProvider} />

@@ -6,26 +6,23 @@ const Menu = () => {
   return (
     <div className="menu">
       <a
-        href="https://github.com/FredrikOseberg/react-chatbot-kit"
+        href="#"
         target="_blank"
         rel="noopener noreferrer"
         className="menu-link"
       >
-        Github
+        Reviews
       </a>
       <a
-        href="https://www.npmjs.com/package/react-chatbot-kit"
+        href="#"
         className="menu-link"
         target="_blank"
         rel="noopener noreferrer"
       >
-        NPM
+        About Me
       </a>
       <a href="#examples" className="menu-link">
-        Examples
-      </a>
-      <a href="#tutorials" className="menu-link">
-        Tutorials
+        Test Drive
       </a>
     </div>
   );

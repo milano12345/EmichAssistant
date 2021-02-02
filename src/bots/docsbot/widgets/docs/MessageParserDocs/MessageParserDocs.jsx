@@ -19,10 +19,6 @@ const MessageParserDocs = ({ infoBox, setState }) => {
 
   return (
     <div className={styles.overview}>
-      <FadeIn left by={250}>
-        <MessageParserOverview className={styles.overviewSVG} />
-      </FadeIn>
-
       <ConditionallyRender
         ifTrue={showMessageParserInfoBox}
         show={

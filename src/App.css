@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+@media screen and (max-width: 802px){
+img.logo {
+    width: 72%;
+}
+}
+
+.menu {
+  justify-content: center!important;
+}
+
+ .logo {
+  padding-top: 40px;
+  height: auto;
+  width: 35%;
+ }
 .app-npm-install {
   background: #286f65;
   padding: 8px;
