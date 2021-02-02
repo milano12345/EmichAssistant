@@ -15,7 +15,7 @@ import "./App.css";
 function App() {
   const [showChatbot, toggleChatbot] = useState(false);
   if(showChatbot === false) {
-  setTimeout(() => {toggleChatbot(true) },2500)
+  setTimeout(() => {toggleChatbot(true) },500)
   }
   return (
     <div className="App">
