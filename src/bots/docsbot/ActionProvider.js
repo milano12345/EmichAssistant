@@ -5,10 +5,12 @@ class ActionProvider {
   }
 
   handleMessageParserDocs = () => {
-    const messages = this.createChatBotMessage(
-      "Hi there, I'd like to connect you to the next available team member. May I have your name?",
+    const messages = [this.createChatBotMessage(
+      "Here at Emich 1 Chevrolet, we make it easy to get a high value cash offer on your vehicle.",
+    ),(
+      "We offer two great options, a quick and easy in-person appraisal or an unseen estimate. Which do you prefer?",
       { widget: "messageParser", withAvatar: false }
-    );
+    )]
 
     this.addMessageToBotState(messages);
   };
@@ -25,10 +27,12 @@ class ActionProvider {
   };
 
   handleConfigDocs = () => {
-    const messages = this.createChatBotMessage(
-      "Hi there, I'd like to connect you to the next available team member. May I have your name?",
-      { widget: "config"}
-    );
+    const messages = [
+      this.createChatBotMessage(
+      "We offer two great options, a quick and easy in-person appraisal or an unseen estimate. Which do you prefer?",
+      { widget: "trades"}
+    ),
+      ];
 
     this.addMessageToBotState(messages);
   };

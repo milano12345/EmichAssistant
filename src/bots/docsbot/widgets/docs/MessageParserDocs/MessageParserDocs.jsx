@@ -3,11 +3,11 @@ import { FadeIn } from "react-anim-kit";
 import { ConditionallyRender } from "react-util-kit";
 
 import { ReactComponent as MessageParserOverview } from "../../../../../assets/img/message-parser-overview.svg";
-
+//import TradeOptions from "../options/TradeOptions/TradeOptions";
 import styles from "./MessageParserDocs.module.css";
 import InformationBox from "../../InformationBox/InformationBox";
 
-const MessageParserDocs = ({ infoBox, setState }) => {
+const MessageParserDocs = ({ infoBox, setState, props }) => {
   useEffect(() => {
     setState((state) => ({
       ...state,

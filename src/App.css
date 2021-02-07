@@ -17,6 +17,12 @@ img.logo1 {
 }
 }
 
+.react-chatbot-kit-chat-bot-avatar-container {
+  background:url(./assets/img/headerphoto.jpg) no-repeat center center;
+  font-size: 0rem!important;
+  background-size: cover;
+}
+
 .menu {
   justify-content: center!important;
 }

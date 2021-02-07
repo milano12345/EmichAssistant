@@ -3,6 +3,7 @@ import { createChatBotMessage } from "react-chatbot-kit";
 
 import Overview from "./widgets/Overview/Overview";
 import MessageParserDocs from "./widgets/docs/MessageParserDocs/MessageParserDocs";
+import Trades from "./widgets/Trades/Trades"
 import ActionProviderDocs from "./widgets/docs/ActionProviderDocs/ActionProviderDocs";
 import Config from "./widgets/docs/Config/Config";
 import WidgetDocs from "./widgets/docs/WidgetDocs/WidgetDocs";
@@ -22,7 +23,7 @@ const config = {
   },
   initialMessages: [
     createChatBotMessage(
-      `Hi, I'm ${botName}. I'm your personal assistant?`
+      `Hi, I'm ${botName}. I'm your personal assistant.`
     ),
     createChatBotMessage(
       "Is there anything I can help you with?",
@@ -39,6 +40,11 @@ const config = {
   },
   customComponents: {},
   widgets: [
+    {
+      widgetName: "trades",
+      widgetFunc: (props) => <Trades {...props} />,
+      mapStateToProps: ["gist"],
+    },
     {
       widgetName: "overview",
       widgetFunc: (props) => <Overview {...props} />,
