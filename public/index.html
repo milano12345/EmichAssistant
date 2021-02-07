@@ -8,6 +8,31 @@
   <meta name="theme-color" content="#000000" />
   <meta name="Emich Assistant for Daniel" content="Daniel's Personal Work Assistant" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript">
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Port: "2525",
+        Username: "dmilano857@gmail.com",
+        Password: "3C6BF240F11C23C065B133A46C36EF991649",
+        To: 'dmilano857@gmail.com',
+        From: "dmilano857@gmail.com",
+        Subject: "This is the subject",
+        Body: "And this is the body",
+        Attachments: [
+          {
+            name: "File_Name_with_Extension",
+            path: "Full Path of the file"
+          }]
+      })
+        .then(function (message, error) {
+          console.log(message)
+          alert("Mail has been sent successfully")
+        });
+
+    } 
+  </script>
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/

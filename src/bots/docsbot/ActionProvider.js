@@ -7,6 +7,18 @@ class ActionProvider {
     this.setState = setStateFunc;
   }
 
+  dispatchEmail = () => {
+    const messages = [this.createChatBotMessage(
+      <form method="post"> 
+      <input type="button" value="Send Mail"
+          onClick={window.sendEmail()} /> 
+    </form> 
+      //{ widget: "messageParser", withAvatar: false }
+    )]
+
+    this.addMessageToBotState(messages);
+  };
+
   handleUnseenEstimate = () => {
     const messages = [this.createChatBotMessage(
       "Please click below and tell us a little about your trade in. Thank you."
@@ -105,5 +117,6 @@ class ActionProvider {
     }
   };
 }
+
 
 export default ActionProvider;

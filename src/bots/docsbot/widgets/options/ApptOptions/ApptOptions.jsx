@@ -7,7 +7,7 @@ const TradeOptions = (props) => {
         {
             //name: "messageparser",
             name: "Monday",
-            handler: props.actionProvider.handleTradeAppt,
+            handler: props.actionProvider.dispatchEmail,
             id: 1,
         },
         {
