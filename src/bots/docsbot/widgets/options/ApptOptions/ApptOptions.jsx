@@ -6,15 +6,27 @@ const TradeOptions = (props) => {
     const options = [
         {
             //name: "messageparser",
-            name: "Quick In-Person Appraisal",
+            name: "Monday",
             handler: props.actionProvider.handleTradeAppt,
             id: 1,
         },
         {
             //name: "config",
-            name: "Unseen Estimate",
+            name: "Tuesday",
             handler: props.actionProvider.handleUnseenEstimate,
             id: 2,
+        },
+        {
+            //name: "messageparser",
+            name: "Wednesday",
+            handler: props.actionProvider.handleTradeAppt,
+            id: 3,
+        },
+        {
+            //name: "config",
+            name: "Thursday",
+            handler: props.actionProvider.handleUnseenEstimate,
+            id: 4,
         },
         // {
         //   //name: "actionprovider",

@@ -1,6 +1,7 @@
 import React from "react";
 import { createChatBotMessage } from "react-chatbot-kit";
 
+import Appts from"./widgets/Appts/Appts";
 import Overview from "./widgets/Overview/Overview";
 import MessageParserDocs from "./widgets/docs/MessageParserDocs/MessageParserDocs";
 import Trades from "./widgets/Trades/Trades"
@@ -40,6 +41,11 @@ const config = {
   },
   customComponents: {},
   widgets: [
+    {
+      widgetName: "apptPicker",
+      widgetFunc: (props) => <Appts {...props} />,
+      mapStateToProps: ["gist"],
+    },
     {
       widgetName: "trades",
       widgetFunc: (props) => <Trades {...props} />,
