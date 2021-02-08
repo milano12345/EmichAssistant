@@ -6,27 +6,45 @@ const TradeOptions = (props) => {
     const options = [
         {
             //name: "messageparser",
-            name: "Monday",
+            name: "Sunday",
             handler: props.actionProvider.dispatchEmail,
             id: 1,
         },
         {
             //name: "config",
-            name: "Tuesday",
+            name: "Monday",
             handler: props.actionProvider.handleUnseenEstimate,
             id: 2,
         },
         {
             //name: "messageparser",
-            name: "Wednesday",
+            name: "Tuesday",
             handler: props.actionProvider.handleTradeAppt,
             id: 3,
         },
         {
             //name: "config",
-            name: "Thursday",
+            name: "Wednesday",
             handler: props.actionProvider.handleUnseenEstimate,
             id: 4,
+        },
+        {
+            //name: "config",
+            name: "Thursday",
+            handler: props.actionProvider.handleUnseenEstimate,
+            id: 5,
+        },
+        {
+            //name: "messageparser",
+            name: "Friday",
+            handler: props.actionProvider.handleTradeAppt,
+            id: 6,
+        },
+        {
+            //name: "config",
+            name: "Saturday",
+            handler: props.actionProvider.handleUnseenEstimate,
+            id: 7,
         },
         // {
         //   //name: "actionprovider",
