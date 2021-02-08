@@ -25,7 +25,9 @@ class ActionProvider {
       //{ widget: "messageParser", withAvatar: false }
     ),
     this.createChatBotMessage(
-      <button href="https://emichchevrolet.formstack.com/forms/unseen_appraisal_form">Click Here</button>
+      <form action="https://emichchevrolet.formstack.com/forms/unseen_appraisal_form">
+    <input type="submit" value="Get an offer" />
+</form>
     )]
 
     this.addMessageToBotState(messages);
