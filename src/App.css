@@ -144,6 +144,6 @@ li {
 
 @media (max-width: 600px) {
   .app-chatbot-container {
-    transform: scale(1.2) translateX(-106px)
+    transform: scale(1.05)
   }
 }
